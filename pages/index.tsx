@@ -17,7 +17,7 @@ const priceFetcher = async () => {
 };
 
 export default function Index() {
-  const { data }: { data?: any, error?: any } = useSWR('unused', priceFetcher, { refreshInterval: 60 * 1000 });
+  const { data }: { data?: any, error?: any } = useSWR('unused', priceFetcher, { refreshInterval: 60 * 1000, refreshWhenHidden: true });
 
   return (
       <Layout index>
