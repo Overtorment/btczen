@@ -1,13 +1,13 @@
 import Head from 'next/head';
 
-const name = 'btczen';
-export const siteTitle = 'btczen';
+const name = 'BTC Zen';
+export const siteTitle = 'BTC Zen';
 
 export default function Layout({
   children,
 }: {
   children: React.ReactNode
-  home?: boolean,
+  index?: boolean,
 }) {
   return (
     <div>
@@ -29,12 +29,6 @@ export default function Layout({
       </Head>
 
       <main>{children}</main>
-
-        {/*<footer className="footer mt-auto py-3 bg-light">
-            <div className="container">
-                <span className="text-muted">footer</span> <br/>
-            </div>
-        </footer>*/}
     </div>
   );
 }
