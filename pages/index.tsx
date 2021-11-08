@@ -26,13 +26,13 @@ export default function Index() {
           </Head>
 
           <div className="d-flex flex-column min-vh-100 justify-content-center align-items-center">
+              <p className="text-white">price data from coindesk.com</p>
               {data ? (
                   <div style={{ fontSize: 99 }}>
               <span>{data}</span>
                   </div>
               ) : null}
               <br/>
-              <p className="text-white">price data from coindesk.com</p>
               <p className="text-white">webpage source: github.com/overtorment/btczen</p>
           </div>
       </Layout>
